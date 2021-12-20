@@ -29,4 +29,24 @@ total disk used: 136 Gb
 
 I also used debian-11.1.0-amd64-netinst.iso for host OS since I am more confortable with Debian than RH.
 
+20-12-21
+
+Added 
+10.240.0.11     etcd1.example.com       etcd1
+10.240.0.12     etcd2.example.com       etcd2
+10.240.0.21     controller1.example.com controller1
+10.240.0.22     controller2.example.com controller2
+10.240.0.31     worker1.example.com     worker1
+10.240.0.32     worker2.example.com     worker2
+10.240.0.200	lb.example.com		lb
+
+to /etc/hosts on
+etc1
+etc2
+controller1
+controller2
+worker1
+worker2
+
+
 
