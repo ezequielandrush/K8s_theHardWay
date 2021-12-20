@@ -1,0 +1,32 @@
+network created
+Kubernetes (infra network)
+params:
+10.240.0.0/24
+DHCP range:
+10.240.0.11 - 10.240.0.100
+forward mode: NAT
+
+Provision VMs.
+
+This is the VMs Schema
+
+	Hostname	|	RAM	|	Disk	|	IP
+
+	etcd1 		|	512 MB	|	8 GB 	|	10.240.0.11/24
+	etcd2 		|	512 MB	|	8 GB 	|	10.240.0.12/24
+	etcd3		|	512 MB	|	8 GB	|	10.240.0.13/24
+	controller1 	|	512 MB	|	8 GB	|	10.240.0.21/24
+	controller2 	|	512 MB	|	8 GB	|	10.240.0.22/24
+	controller	|		|		|	10.240.0.20/24
+	worker1 	|	2048 GB	|	40 GB 	|	10.240.0.31/24
+	worker2 	|	2048 GB |	40 GB 	|	10.240.0.32/24
+	lb1 		|	512 MB	|	8 GB 	|	0.240.0.41/24
+	lb2		|	512 MB 	|	8 GB 	|	10.240.0.42/24
+	lb 		|		|		|	10.240.0.40/24
+
+total memory used: 7680 Mb
+total disk used: 136 Gb
+
+I also used debian-11.1.0-amd64-netinst.iso for host OS since I am more confortable with Debian than RH.
+
+
