@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: |
         cd app
-        docker build . --file app/Dockerfile --tag testapp:$(date +%s) --tag testapp:latest
+        docker build . --file Dockerfile --tag testapp:$(date +%s) --tag testapp:latest
